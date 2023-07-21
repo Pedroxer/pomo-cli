@@ -1,4 +1,4 @@
-module pomo-cli
+module github.com/Pedroxer/pomo-cli
 
 go 1.20
 

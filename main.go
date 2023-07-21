@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	pomodoro "pomo-cli/Pomodoro"
+	pomodoro "github.com/Pedroxer/pomo-cli/Pomodoro"
 	"time"
 
 	"github.com/urfave/cli/v2"
@@ -14,7 +14,7 @@ func Info() {
 	for true {
 		time.Sleep(2 * time.Minute)
 		h, m, _ := time.Now().Clock()
-		 
+
 		fmt.Printf("hour: %d minute: %d\n", h, m)
 	}
 }
@@ -22,7 +22,7 @@ func Info() {
 func main() {
 	var name string
 	var dur string
-	
+
 	app := &cli.App{
 		Name:        "Pomo-timer",
 		Description: "make your work less stressful by adding pomodoro technique",
